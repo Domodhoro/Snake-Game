@@ -4,11 +4,14 @@
 
 #include <SDL2/SDL.h>
 
-#define TITLE "SNAKE GAME"
-#define SPEED 200
-#define BLOCK_SIZE 20
-#define COLUMNS 40
-#define ROWS 20
+const char* TITLE = "SNAKE GAME";
+
+enum {
+    SPEED = 200,
+    BLOCK_SIZE = 20,
+    COLUMNS = 40,
+    ROWS = 20
+};
 
 struct {
     SDL_Renderer* renderer;
